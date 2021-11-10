@@ -12,7 +12,7 @@ class Form extends Component {
 
   componentDidMount() {
     axios
-      .get('http://battuta.medunes.net/api/country/all/?key=c986ee6250b57d247844491490212d32')
+      .get('https://battuta.medunes.net/api/country/all/?key=c986ee6250b57d247844491490212d32')
       .then((response) => {
         console.log(response);
         this.setState({ paises: response.data })
